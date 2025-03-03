@@ -17,12 +17,11 @@ This is a standalone version of the JSON parser used in `pydantic-core`. The rec
 %prep
 %autosetup -p1 -n jiter-%{version} -a1
 
-#build
-#pyproject_wheel
+%build
+%py_build
 
-#install
-#pyproject_install
-#python_expand %fdupes %{buildroot}%{$python_sitearch}
+%install
+%py_install
 
 %files
 %doc README.md
