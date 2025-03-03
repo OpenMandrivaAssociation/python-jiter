@@ -9,12 +9,13 @@ Source1:        vendor.tar.xz
 BuildRequires:  python-maturin
 BuildRequires:  python-pip
 BuildRequires:  rust-packaging
-BuildSystem: python
+#BuildSystem: python
 
 %description
 This is a standalone version of the JSON parser used in `pydantic-core`. The recommendation is to only use this package directly if you do not use `pydantic`.
 
 %prep
+%cargo_prep -v vendor
 %autosetup -p1 -n jiter-%{version} -a1
 
 %build
