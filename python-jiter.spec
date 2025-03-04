@@ -1,3 +1,4 @@
+%undefine _debugsource_packages
 Name:           python-jiter
 Version:        0.8.2
 Release:        1
