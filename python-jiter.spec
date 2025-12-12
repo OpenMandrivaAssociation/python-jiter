@@ -1,7 +1,7 @@
 %undefine _debugsource_packages
 Name:           python-jiter
 Version:        0.8.2
-Release:        1
+Release:        2
 Summary:        Fast iterable JSON parser
 License:        MIT
 URL:            https://github.com/pydantic/jiter/
