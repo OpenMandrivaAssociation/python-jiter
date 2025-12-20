@@ -1,14 +1,14 @@
 %undefine _debugsource_packages
 Name:           python-jiter
-Version:        0.8.2
-Release:        2
+Version:        0.12.0
+Release:        1
 Summary:        Fast iterable JSON parser
 License:        MIT
 URL:            https://github.com/pydantic/jiter/
 Source0:        https://files.pythonhosted.org/packages/source/j/jiter/jiter-%{version}.tar.gz
 Source1:        vendor.tar.xz
-BuildRequires:  python-maturin
-BuildRequires:  python-pip
+BuildRequires:  python%{pyver}dist(maturin)
+BuildRequires:  python%{pyver}dist(pip)
 BuildRequires:  rust-packaging
 #BuildSystem: python
 
