@@ -9,7 +9,7 @@ Summary:	Fast iterable JSON parser
 License:	MIT
 Group:		Development/Python
 URL:		https://github.com/pydantic/jiter
-Source0:	https://github.com/pydantic/jiter/archive/v%{version}/%{module}-%{version}.tar.gz
+Source0:	https://files.pythonhosted.org/packages/source/j/%{module}/%{module}-%{version}.tar.gz
 Source1:	%{name}-%{version}-vendor.tar.xz
 
 BuildSystem: python
@@ -45,10 +45,7 @@ EOF
 export RUSTFLAGS="-lpython%{pyver}"
 %cargo_license_summary
 %{cargo_license} > LICENSE.dependencies
-cd crates/jiter-python
 
-%install -p
-cd crates/jiter-python
 
 %if %{with tests}
 %check
