@@ -14,6 +14,7 @@ Source1:	%{name}-%{version}-vendor.tar.xz
 
 BuildSystem: python
 BuildRequires:	cargo
+BuildRequires:	pkgconfig(python3)
 BuildRequires:	python%{pyver}dist(maturin)
 BuildRequires:	python%{pyver}dist(pip)
 BuildRequires:	rust-packaging
