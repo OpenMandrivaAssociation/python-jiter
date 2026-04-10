@@ -3,7 +3,7 @@
 %bcond tests 1
 
 Name:		python-jiter
-Version:	0.13.0
+Version:	0.14.0
 Release:	1
 Summary:	Fast iterable JSON parser
 License:	MIT
