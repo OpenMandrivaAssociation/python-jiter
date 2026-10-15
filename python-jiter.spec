@@ -10,7 +10,7 @@ License:	MIT
 Group:		Development/Python
 URL:		https://github.com/pydantic/jiter
 Source0:	https://files.pythonhosted.org/packages/source/j/%{module}/%{module}-%{version}.tar.gz
-Source1:	%{name}-%{version}-vendor.tar.xz
+Source1:	vendor.tar.xz
 
 BuildSystem: python
 BuildRequires:	cargo
